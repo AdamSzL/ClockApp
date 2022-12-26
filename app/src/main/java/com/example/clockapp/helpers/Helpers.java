@@ -1,7 +1,5 @@
 package com.example.clockapp.helpers;
 
-import android.util.Log;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -43,7 +41,6 @@ public class Helpers {
     }
 
     public static long convertTimeToMs(String time) {
-        Log.d("xxx", time);
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SS");
         Date date = null;
         try {

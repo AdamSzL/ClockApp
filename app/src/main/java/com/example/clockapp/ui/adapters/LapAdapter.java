@@ -15,7 +15,6 @@ import com.example.clockapp.R;
 import com.example.clockapp.helpers.Helpers;
 import com.example.clockapp.ui.alarm.LapEntry;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LapAdapter extends ArrayAdapter {

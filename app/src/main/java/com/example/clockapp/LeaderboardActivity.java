@@ -1,18 +1,13 @@
 package com.example.clockapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,14 +15,12 @@ import android.widget.ListView;
 import android.widget.Spinner;
 
 import com.example.clockapp.db.daos.ResultDao;
-import com.example.clockapp.db.entities.Alarm;
 import com.example.clockapp.db.entities.Result;
 import com.example.clockapp.ui.adapters.ResultAdapter;
 import com.example.clockapp.ui.alarm.AlarmFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class LeaderboardActivity extends AppCompatActivity {

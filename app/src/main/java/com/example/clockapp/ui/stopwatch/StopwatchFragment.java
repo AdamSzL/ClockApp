@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -33,12 +32,8 @@ import com.example.clockapp.ui.adapters.LapAdapter;
 import com.example.clockapp.ui.alarm.AlarmFragment;
 import com.example.clockapp.ui.alarm.LapEntry;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.TimeZone;
 
 public class StopwatchFragment extends Fragment {
 

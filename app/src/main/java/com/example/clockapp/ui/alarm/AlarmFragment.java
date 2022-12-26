@@ -13,11 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 
-import android.service.controls.actions.FloatAction;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -39,7 +37,6 @@ import com.example.clockapp.SettingsActivity;
 import com.example.clockapp.db.AppDatabase;
 import com.example.clockapp.db.daos.AlarmDao;
 import com.example.clockapp.db.entities.Alarm;
-import com.example.clockapp.helpers.AlarmSetter;
 import com.example.clockapp.ui.adapters.AlarmAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

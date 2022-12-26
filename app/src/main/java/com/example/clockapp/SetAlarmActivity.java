@@ -1,21 +1,13 @@
 package com.example.clockapp;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.room.Room;
 
 import android.app.Activity;
-import android.app.AlarmManager;
 import android.app.AlertDialog;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -26,7 +18,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -37,7 +28,6 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.example.clockapp.db.AppDatabase;
 import com.example.clockapp.db.daos.AlarmDao;
 import com.example.clockapp.db.entities.Alarm;
 import com.example.clockapp.helpers.AlarmSetter;
@@ -50,7 +40,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.TimeZone;
 
 public class SetAlarmActivity extends AppCompatActivity {
 

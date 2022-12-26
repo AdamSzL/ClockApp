@@ -13,17 +13,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.core.app.NotificationCompat;
 import androidx.room.Room;
 
 import com.example.clockapp.db.AppDatabase;
 import com.example.clockapp.db.daos.AlarmDao;
 import com.example.clockapp.db.entities.Alarm;
-import com.example.clockapp.ui.alarm.AlarmFragment;
 
 import java.io.IOException;
 
@@ -108,27 +105,23 @@ public class AlarmService extends Service {
     @Override
     public void onCreate()
     {
-        Log.d("xxx", "oncreate");
         registerScreenOffReceiver();
     }
 
     @Override
     public void onDestroy()
     {
-        Log.d("xxx", "ondestroy");
         unregisterReceiver(br_ScreenOffReceiver);
         br_ScreenOffReceiver = null;
     }
 
     private void registerScreenOffReceiver()
     {
-        Log.d("xxx", "screenof");
         br_ScreenOffReceiver = new BroadcastReceiver()
         {
             @Override
             public void onReceive(Context context, Intent intent)
             {
-                Log.d("xxx", "ACTION_SCREEN_OFF");
                 // do something, e.g. send Intent to main app
             }
         };
