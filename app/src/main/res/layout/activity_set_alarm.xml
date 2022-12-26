@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetAlarmActivity"
+    android:orientation="vertical">
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repeat_label"
+                android:layout_marginLeft="@dimen/set_alarm_text_left_margin"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical">
+
+            <TextView
+                android:id="@+id/repeat_daily_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_repeat_label"
+                android:background="?attr/colorOnBackground"
+                android:paddingHorizontal="@dimen/repeat_option_horizontal_padding"
+                android:paddingVertical="@dimen/repeat_option_vertical_padding"
+                android:textSize="@dimen/repeat_option_text_size"
+                android:letterSpacing="0.1"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginRight="@dimen/set_alarm_text_left_margin"/>
+
+            <TextView
+                android:id="@+id/repeat_weekly_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weekly_repeat_label"
+                android:background="?attr/colorOnBackground"
+                android:paddingHorizontal="@dimen/repeat_option_horizontal_padding"
+                android:paddingVertical="@dimen/repeat_option_vertical_padding"
+                android:textSize="@dimen/repeat_option_text_size"
+                android:letterSpacing="0.1"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginRight="@dimen/set_alarm_text_left_margin"/>
+
+            <TextView
+                android:id="@+id/repeat_monthly_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_repeat_label"
+                android:background="?attr/colorOnBackground"
+                android:textSize="@dimen/repeat_option_text_size"
+                android:paddingHorizontal="@dimen/repeat_option_horizontal_padding"
+                android:paddingVertical="@dimen/repeat_option_vertical_padding"
+                android:letterSpacing="0.1"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginRight="@dimen/set_alarm_text_left_margin" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/alarm_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_name_label"
+                android:layout_marginLeft="@dimen/set_alarm_text_left_margin"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical">
+
+            <TextView
+                android:id="@+id/label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_default_label"
+                android:layout_marginRight="@dimen/set_alarm_text_left_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/alarm_ringtone_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_ringtone_label"
+                android:layout_marginLeft="@dimen/set_alarm_text_left_margin"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical">
+
+            <TextView
+                android:id="@+id/alarm_ringtone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_default_ringtone"
+                android:layout_marginRight="@dimen/set_alarm_text_left_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ringtone_part_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ringtone_part_label"
+            android:layout_marginLeft="@dimen/set_alarm_text_left_margin"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/ringtone_part_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/set_alarm_text_left_margin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_volume_label"
+            android:layout_marginLeft="@dimen/set_alarm_text_left_margin"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/volume_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/set_alarm_text_left_margin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/set_alarm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_alarm_btn_label" />
+
+    </LinearLayout>
+
+</LinearLayout>
