@@ -16,6 +16,15 @@ ClockApp is a simple clock utility app I built at the very beginning of my progr
 - **Stopwatch with Laps**  
   Track time precisely and record lap times. The best and worst laps are highlighted.
 
+## 🔧 Tech Stack
+
+- Java
+- Android SDK
+- XML Layouts
+- Android Views
+- Alarm Manager
+- Room
+
 ## 📸 Screenshots
 
 ### Alarms
@@ -36,15 +45,6 @@ ClockApp is a simple clock utility app I built at the very beginning of my progr
 <img src="https://github.com/user-attachments/assets/839e41b4-acdb-4197-90e7-ffcc80cb4dbd" alt="App screenshot 8" width="300" />
 <img src="https://github.com/user-attachments/assets/4b1de3ee-20f5-4101-8e07-4479bb39e562" alt="App screenshot 9" width="300" />
 <img src="https://github.com/user-attachments/assets/2600ecac-94bb-474e-95ea-345131a0dd64" alt="App screenshot 10" width="300" />
-
-## 🔧 Tech Stack
-
-- Java
-- Android SDK
-- XML Layouts
-- Android Views
-- Alarm Manager
-- Room
 
 ## 📦 Project Status
 
