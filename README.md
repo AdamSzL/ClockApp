@@ -50,6 +50,11 @@ ClockApp is a simple clock utility app I built at the very beginning of my progr
 
 This was one of my first Android apps. While I now use Jetpack Compose in my current projects, ClockApp reminds me of where I started and how far I’ve come.
 
+## ▶️ How to Run
+
+Just clone the repo and open it in **Android Studio**.  
+You can build and run the app right away — no extra configuration needed.
+
 ---
 
 > 💡 Check out more of my projects at [szlosarczyk.dev](https://szlosarczyk.dev)
